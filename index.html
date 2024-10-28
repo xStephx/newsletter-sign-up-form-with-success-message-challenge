@@ -19,17 +19,17 @@
 
 </head>
 
-<body class="font-Roboto bg-CharcoalGrey flex flex-col justify-center items-center min-h-screen">
+<body class="font-Roboto md:bg-CharcoalGrey bg-White flex flex-col justify-center items-center md:min-h-screen">
   <!-- Sign-up form start -->
-  <main class="bg-White flex md:flex-row flex-col p-4 rounded-[30px]">
-    <div class="flex flex-col justify-center p-16">
-      <h1 class="text-6xl text-DarkSlateGrey font-bold mb-10">
+  <main class="bg-White flex md:flex-row flex-col md:m-4 md:p-4 md:rounded-[30px]">
+    <div class="flex flex-col justify-center md:p-16 px-4 md:order-1 order-2">
+      <h1 class="lg:text-6xl md:text-5xl text-4xl text-DarkSlateGrey font-bold mb-10">
         Stay updated!
       </h1>
       <p class="text-CharcoalGrey mb-8">
-        Join 60,000+ product managers receiving monthly <br> updates on:
+        Join 60,000+ product managers receiving monthly <br class="lg:block hidden"> updates on:
       </p>
-      <div class="flex flex-col">
+      <div class="flex flex-col mb-7">
         <div class="flex pb-4">
           <img src="assets/images/icon-success.svg" alt="Success Icon" class="w-[22px]">
           <p class="ml-2 text-DarkSlateGrey">
@@ -53,14 +53,15 @@
         <label class="text-xs text-DarkSlateGrey font-bold mb-1">
           Email address
         </label>
-        <input type="text" placeholder="email@company.com" class="p-4 border-[1px] border-Grey rounded-lg">
+        <input type="text" placeholder="email@company.com" class="p-4 border-[1px] border-Grey rounded-lg hover:cursor-pointer">
       </form>
-      <button class="bg-DarkSlateGrey text-White font-medium rounded-lg p-4 mt-4">
+      <button class="bg-DarkSlateGrey text-White font-medium rounded-lg p-4 mt-5 hover:bg-gradient-to-r hover:to-[hsl(4,100%,67%)] hover:from-pink-500">
         Subscribe to monthly newsletter
       </button>
     </div>
-    <div>
-      <img src="assets/images/illustration-sign-up-desktop.svg" alt="Sign Up Desktop Illustration">
+    <div class="md:order-2 order-1">
+      <img src="assets/images/illustration-sign-up-desktop.svg" alt="Sign Up Desktop Illustration" class="md:block h-full hidden">
+      <img src="assets/images/illustration-sign-up-mobile.svg" alt="Sign Up Mobile Illustration" class="md:hidden block mb-10">
     </div>
   </main>
   <!-- Sign-up form end -->
