@@ -21,7 +21,7 @@
 
 <body class="font-Roboto md:bg-CharcoalGrey bg-White flex flex-col justify-center items-center md:min-h-screen">
   <!-- Sign-up form start -->
-  <main class="bg-White flex md:flex-row flex-col md:m-4 md:p-4 md:rounded-[30px]">
+  <main class="hidden bg-White flex md:flex-row flex-col md:m-4 md:p-4 md:rounded-[30px]">
     <div class="flex flex-col justify-center md:p-16 px-4 md:order-1 order-2">
       <h1 class="lg:text-6xl md:text-5xl text-4xl text-DarkSlateGrey font-bold mb-10">
         Stay updated!
@@ -65,21 +65,21 @@
     </div>
   </main>
   <!-- Sign-up form end -->
- 
-
-
-
-
 
   <!-- Success message start -->
-
-  Thanks for subscribing!
-
-  A confirmation email has been sent to ash@loremcompany.com.
-  Please open it and click the button inside to confirm your subscription.
-
-  Dismiss message
-
+  <section class="bg-White flex flex-col md:m-4 md:p-14 md:rounded-[30px] max-w-[520px]">
+    <img src="assets/images/icon-success.svg" alt="Success Icon" class="w-[65px] mb-7">
+    <h2 class="lg:text-6xl md:text-5xl text-4xl text-DarkSlateGrey font-bold mb-5">
+      Thanks for subscribing!
+    </h2>
+    <p class="text-CharcoalGrey mb-8 md:pr-10">
+      A confirmation email has been sent to <b>ash@loremcompany.com</b>.
+      Please open it and click the button inside to confirm your subscription.
+    </p>
+    <button class="bg-DarkSlateGrey text-White font-medium rounded-lg p-4 mt-5 hover:bg-gradient-to-r hover:to-[hsl(4,100%,67%)] hover:from-pink-500">
+      Dismiss message
+    </button>
+  </section>
   <!-- Success message end -->
 
   <!-- Custom JS-->
