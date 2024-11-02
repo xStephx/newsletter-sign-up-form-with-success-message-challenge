@@ -1,3 +1,4 @@
+// DOM elements 
 const signUp = document.getElementById('sign-up')
 const errorMessage = document.getElementById('error-message')
 const emailInput = document.getElementById('email-input')
@@ -6,6 +7,7 @@ const successMessage = document.getElementById('success-message')
 const successEmail = document.getElementById('success-email')
 const dismissMesage = document.getElementById('dismiss-message')
 
+// Function for submiting
 function submit() {
     const email = emailInput.value.trim()
     const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)
@@ -23,11 +25,13 @@ function submit() {
     }
 }
 
+// Submitting on button
 submitBtn.addEventListener('click', (event) => {
     event.preventDefault()
     submit()
 })
 
+// Submitting on keyboard (Enter)
 emailInput.addEventListener('keypress', (event) => {
     if (event.key === 'Enter') {
         event.preventDefault()
@@ -35,6 +39,7 @@ emailInput.addEventListener('keypress', (event) => {
     }
 })
 
+// Function for dismiss message
 dismissMesage.addEventListener('click', () => {
     signUp.classList.remove('hidden')
     successMessage.classList.add('hidden')
