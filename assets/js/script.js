@@ -19,9 +19,11 @@ function submit() {
         errorMessage.classList.remove('hidden')
         emailInput.classList.add('text-Tomato', 'border-Tomato', 'bg-red-200')
     } else {
-        signUp.classList.add('hidden')
-        successMessage.classList.remove('hidden')
-        successEmail.textContent = email
+        setTimeout(() => {
+            signUp.classList.add('hidden')
+            successMessage.classList.remove('hidden')
+            successEmail.textContent = email
+        }, 400)
     }
 }
 
@@ -41,9 +43,11 @@ emailInput.addEventListener('keypress', (event) => {
 
 // Function for dismiss message
 dismissMesage.addEventListener('click', () => {
-    signUp.classList.remove('hidden')
-    successMessage.classList.add('hidden')
-    emailInput.value = ''
-    errorMessage.classList.add('hidden')
-    emailInput.classList.remove('text-Tomato', 'border-Tomato', 'bg-red-200')
+    setTimeout(() => {
+        signUp.classList.remove('hidden')
+        successMessage.classList.add('hidden')
+        emailInput.value = ''
+        errorMessage.classList.add('hidden')
+        emailInput.classList.remove('text-Tomato', 'border-Tomato', 'bg-red-200')
+    }, 400)
 })
